@@ -3,6 +3,9 @@ pipeline {
         node {
           label "master"  
         }
+        tools {
+            terraform 'terraform'
+        }
     }
 
 
