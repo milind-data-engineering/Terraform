@@ -9,7 +9,7 @@ pipeline {
 stages {
     stage('fetch_latest_code') {
         steps {
-            git credentialsId: 'f3b6d44d94dd132be9cd5ec28aee9601442924f4', url: 'https://github.com/milind270989/Terraform'
+            git credentialsId: '9ccb9975-f00d-4127-9ee6-e8d391879951', url: 'https://github.com/milind270989/Terraform'
         }
     }
 
