@@ -19,7 +19,7 @@ stages {
         steps {
             bat 'terraform init'
             bat 'terraform plan'
-            bat 'terraform apply'
+            bat 'terraform apply --auto-approve'
         }
     }
 }
