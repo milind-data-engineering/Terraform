@@ -4,7 +4,7 @@ pipeline {
           label "master"  
         }
     }
-}
+
 
 stages {
     stage('fetch_latest_code') {
@@ -19,5 +19,6 @@ stages {
             sh 'terraform plan'
         }
     }
+}
 }
 
