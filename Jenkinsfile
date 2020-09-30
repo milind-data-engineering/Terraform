@@ -2,12 +2,11 @@ pipeline {
     agent {
         node {
           label "master"  
-        }
-        tools {
-            terraform 'terraform'
-        }
+        }  
     }
-
+    tools {
+        terraform 'terraform'
+    }
 
 stages {
     stage('fetch_latest_code') {
